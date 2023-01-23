@@ -23,6 +23,9 @@ jobs:
       - name: Checkout Git Repository
         uses: actions/checkout@v3
 
+      - name: ls
+        run: ls -l /Users
+
       # Setup Ruby while Caching Gems
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
